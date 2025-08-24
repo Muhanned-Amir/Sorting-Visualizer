@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORTING VISUALIZER</title>
+    <!-- * fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- ? font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ? fav icom -->
+    <link rel="icon" href="./CSS/all.min.css">
+    <!--? bootstrap css  -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!-- ? CSS  -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- ? App icon  -->
+    <link rel="icon" type="image/x-icon" href="./imgs/imgs/sort.png">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#nav">
+    <!--~ NavBar  -------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-opacity-50 " id="nav">
+        <div class="container py-3">
+            <a class="navbar-brand fw-bolder" href="#home">SORTING VISUALIZER</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sorter">Sort</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#algo-info">Algorithms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--~ Home  --------------------------------------------------------------------->
+    <section id="home" class="py-4 d-flex justify-content-center align-items-center">
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+            <div class="content text-center">
+                <h5 class="text-white ">SORTING ALGORITHMS VISUALIZER</h5>
+                <h1 class="text-white py-3"> <span id="element"></span><span class="fw-lighter">SORT ALGORITHM </span></h1>
+            </div>
+            <div class="icons d-flex column-gap-2 m-auto">
+                <div class="icon-item d-flex justify-content-center align-items-center">
+                    <i class="fa-brands fa-github text-white"></i>
+                </div>
+                <div class="icon-item d-flex justify-content-center align-items-center">
+                    <i class="fa-brands fa-linkedin text-white"></i>
+                </div>
+                <div class="icon-item d-flex justify-content-center align-items-center">
+                    <i class="fa-brands fa-facebook text-white"></i>
+                </div>
+                <div class="icon-item d-flex justify-content-center align-items-center">
+                    <i class="fa-brands fa-x-twitter text-white"></i>
+                </div>
+                <div class="icon-item d-flex justify-content-center align-items-center">
+                    <i class="fa-brands fa-instagram text-white"></i>
+                </div>
+                <div class="icon-item d-flex justify-content-center align-items-center">
+                    <i class="fa-brands fa-youtube text-white"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--~ About --------------------------------------------------------------------->
+    <section id="about">
+        <div class="container">
+            <div class="inner py-5">
+                <div class="row">
+                    <div class="col-xl-5">
+                        <div class="halftoneimg">
+                            <img src="./imgs/imgs/About.png" class="w-100 rounded shadow" alt="Sorting Visualizer Illustration">
+                        </div>
+                    </div>
+                    <div class="col-xl-7 pt-3 pt-xl-0 p-5">
+                        <h3 class="fw-bolder">About</h3>
+                        <p>
+                            Welcome to the <strong>Sorting Visualizer</strong> – an interactive web tool designed to help you understand how popular sorting algorithms work through real-time visual animations.
+                        </p>
+                        <p>
+                            This project showcases the inner workings of algorithms like <strong>Bubble Sort</strong>,<strong>Selection Sort </strong>, <strong>Insertion Sort</strong>, <strong>Heap Sort</strong>, <strong>Merge Sort</strong>, and <strong>Quick Sort</strong> in an engaging and educational way.
+                        </p>
+                        <h5 class="pt-3">How to Use:</h5>
+                        <ul>
+                            <li>Select array size using the slider</li>
+                            <li>Choose sorting algorithm from dropdown</li>
+                            <li>Adjust speed if needed</li>
+                            <li>Click "Sort" to visualize the algorithm</li>
+                        </ul>
+                        <p class="pt-3">
+                            <strong>Color Legend:</strong> Blue = Default, Light Blue = Comparing, Purple = Swapping, Green = Sorted
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--~ Sorter ---------------------------------------------------------------------------------->
+    <section id="sorter" class="py-5">
+        <div class="container">
+            <div class="bars_container" id="bars_container"></div>
+            <div class="buttons_container text-center py-4">
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="text-white">Array Size:</span>
+                        <input type="range" id="slider" min="5" max="100" value="50" class="form-range">
+                    </div>
+                    <select class="form-select bg-dark text-white" id="speed">
+                        <option value="100">Slow</option>
+                        <option value="50" selected>Medium</option>
+                        <option value="10">Fast</option>
+                    </select>
+                    <select class="form-select bg-dark text-white" id="algo">
+                        <option value="bubble">Bubble Sort</option>
+                        <option value="insertion">Insertion Sort</option>
+                        <option value="heap">Heap Sort</option>
+                        <option value="merge">Merge Sort</option>
+                        <option value="quick">Quick Sort</option>
+                        <option value="selection">Selection Sort</option>
+                    </select>
+                    <button class="btn btn-outline-light" id="randomize_array_btn">
+                        Randomize Array
+                    </button>
+                    <button class="btn btn-primary" id="sort_btn">
+                        Sort
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--~ Algorithm Info ------------------------------------------------------------------>
+    <section id="algo-info" class="p-5 bg-dark">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-md-12">
+                    <div class="title text-center py-3">
+                        <h3 class="text-white">Sorting Algorithms</h3>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="algo-info h-100">
+                        <h4>Bubble Sort</h4>
+                        <p class="text-white-50">Repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.</p>
+                        <ul class="text-white-50">
+                            <li><strong>Time Complexity:</strong> O(n²)</li>
+                            <li><strong>Space Complexity:</strong> O(1)</li>
+                            <li><strong>Stable:</strong> Yes</li>
+                            <li><strong>Best for:</strong> Small datasets, educational purposes</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="algo-info h-100">
+                        <h4>Insertion Sort</h4>
+                        <p class="text-white-50">Builds the final sorted array one item at a time by inserting each item into its correct position.</p>
+                        <ul class="text-white-50">
+                            <li><strong>Time Complexity:</strong> O(n²)</li>
+                            <li><strong>Space Complexity:</strong> O(1)</li>
+                            <li><strong>Stable:</strong> Yes</li>
+                            <li><strong>Best for:</strong> Small or nearly sorted datasets</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="algo-info h-100">
+                        <h4>Heap Sort</h4>
+                        <p class="text-white-50">Uses a binary heap data structure to sort elements by first building a max heap.</p>
+                        <ul class="text-white-50">
+                            <li><strong>Time Complexity:</strong> O(n log n)</li>
+                            <li><strong>Space Complexity:</strong> O(1)</li>
+                            <li><strong>Stable:</strong> No</li>
+                            <li><strong>Best for:</strong> Large datasets with memory constraints</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="algo-info h-100">
+                        <h4>Merge Sort</h4>
+                        <p class="text-white-50">Divide-and-conquer algorithm that divides the input into smaller parts, sorts them, and merges them.</p>
+                        <ul class="text-white-50">
+                            <li><strong>Time Complexity:</strong> O(n log n)</li>
+                            <li><strong>Space Complexity:</strong> O(n)</li>
+                            <li><strong>Stable:</strong> Yes</li>
+                            <li><strong>Best for:</strong> Large datasets, external sorting</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="algo-info h-100">
+                        <h4>Quick Sort</h4>
+                        <p class="text-white-50">Divide-and-conquer that selects a 'pivot' element and partitions the array around the pivot.</p>
+                        <ul class="text-white-50">
+                            <li><strong>Time Complexity:</strong> O(n log n) average</li>
+                            <li><strong>Space Complexity:</strong> O(log n)</li>
+                            <li><strong>Stable:</strong> No</li>
+                            <li><strong>Best for:</strong> General-purpose sorting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="algo-info h-100">
+                        <h4>Selection Sort</h4>
+                        <p class="text-white-50">Divides the input list into two parts: a sorted and an unsorted part, repeatedly selecting the smallest element from the unsorted part.</p>
+                        <ul class="text-white-50">
+                            <li><strong>Time Complexity:</strong> O(n²)</li>
+                            <li><strong>Space Complexity:</strong> O(1)</li>
+                            <li><strong>Stable:</strong> No</li>
+                            <li><strong>Best for:</strong> Small datasets or when memory writes are expensive</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--~ Footer  ----------------------------------------------------------------------------------------->
+    <footer class="bg-transparent text-center">
+        <div class="text-center p-3 bg-transparent">
+            © 2025 Copyright:
+            <a class="text-body" href="https://sortvisualizer.com/">SortVisualizer.com</a>
+        </div>
+    </footer>
+    <!--^ Home span ------------------------------------------------------>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['QUICK', 'INSERTION', 'BUBBLE', 'MERGE', 'HEAP', 'SELECTION'],
+            typeSpeed: 80,
+            loop: true
+        });
+    </script>
+    <!--^ JS -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>
